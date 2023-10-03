@@ -2,3 +2,4 @@ transformers
 langchain
 requests
 streamlit
+Pytorch
