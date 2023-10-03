@@ -9,7 +9,7 @@ import streamlit as st
 #load_dotenv(find_dotenv())
 HUGGINGFACEHUB_API_TOKEN = "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"
 #HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
-OPENAI_API_KEY = "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"
+COHERE_API_KEY = "Bgsr5bH8HujCbyM8LOkUR7UYjv1vBcGMAah9hc2f"
 
 ##Converting my image to text
 
@@ -35,7 +35,7 @@ def generate_story(scenario):
     """
 
     prompt = PromptTemplate(template=prompt_template, input_variables=["scenario"])
-    story_llm = LLMChain(llm=OpenAI(temperature=0.2, verbose=True, openai_api_key=OPENAI_API_KEY), prompt=prompt, verbose=True)
+    story_llm = LLMChain(llm=Cohere(temperature=0.2, verbose=True, cohere_api_key=COHERE_API_KEY), prompt=prompt, verbose=True)
     story = story_llm.predict(scenario=scenario)
 
     print(story)
