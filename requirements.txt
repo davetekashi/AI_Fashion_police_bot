@@ -2,4 +2,6 @@ transformers
 langchain
 requests
 streamlit
-Pytorch
+torch
+torchvision
+torchaudio
