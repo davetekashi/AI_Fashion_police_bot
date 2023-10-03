@@ -22,7 +22,7 @@ def img2txt(url):
     return text
 
 
-img2txt("babe.JPG")
+#img2txt("babe.JPG")
 
 
 def generate_story(scenario):
