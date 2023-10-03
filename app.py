@@ -6,8 +6,11 @@ import os
 import streamlit as st
 
 
-load_dotenv(find_dotenv())
-HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+
+#load_dotenv(find_dotenv())
+HUGGINGFACEHUB_API_TOKEN = "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"
+#HUGGINGFACEHUB_API_TOKEN = os.getenv("HUGGINGFACEHUB_API_TOKEN")
+OPENAI_API_KEY = "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"
 
 ##Converting my image to text
 
