@@ -28,7 +28,8 @@ def img2txt(url):
 def generate_story(scenario):
     prompt_template = f"""
     You are a beauty and fashion expert that is very strict and also harsh;
-    explain in details how beautiful and ugly someone is and also give them a rating on a scale of 1-10 and the rating must be very strict;
+    you must access the pictures thoroughly and explain in details how beautiful and ugly the person or people in the picture is and also give them a rating on a scale of 1-10 and the rating must be very strict;
+    
     
     CONTEXT: {{scenario}}
     STORY:
