@@ -62,6 +62,7 @@ def txt2speech(message):
 #story = generate_story(scenario)
 #txt2speech(story)
 
+@st.cache_data
 def main():
     st.set_page_config(page_title="Dave AI Corp", page_icon="👾")
 
